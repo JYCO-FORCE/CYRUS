@@ -1073,7 +1073,7 @@ saveButtons.forEach(button => {
 function attendreProchaineMinute() {
     const now = new Date();
     const baseDelay = 60000 - (now.getSeconds() * 1000 + now.getMilliseconds());
-    const offset = Math.floor(Math.random() * 8000) - 4000; // entre -4s et +4s
+    const offset = Math.floor(Math.random() * 14000) - 7000; // entre -7s et +7s
     const finalDelay = Math.max(0, baseDelay + offset);
 
     console.log(`⏳ Prochaine exécution dans ${(finalDelay / 1000).toFixed(2)} secondes (mode synchro)...`);
